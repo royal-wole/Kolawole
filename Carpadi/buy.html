@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en-us"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="Author" content="Carpadi"> 
+  <meta name="description" content="Number one online platform to buy and sell your cars"> 
+  <title>Carpadi</title> 
+  <link rel="icon" href="#" type="image/x-icon"> 
+  <link rel="stylesheet" href="buy.css" type="text/css">
+  <script src="buy.js"></script>
+ </head> 
+<body>
+    <header> 
+   <div> 
+    <img src="https://www.carpadi.com/icons/icon-circle.png" alt="carpadi logo"> 
+   </div> 
+   <div> 
+    <nav> <a href="#">Buy Car</a> 
+    <a href="#">Sell Car</a>
+     <a href="#">Be a Merchant</a> 
+    </nav> 
+   </div> 
+  </header>
+<p id="result"></p>
+<div class="search-box">
+  <input type="text" placeholder="Search" id="searchBox">
+  <button type="submit" onclick="search()">
+      Search
+    <i class='fa fa-search'></i>
+  </button>
+  <div>
+ <section class="sidebar">
+     <form>
+     <h1>FILTER</h1>
+      <select name="cars" id="cars">
+            <option value="" selected disabled>
+    Car make & Model <i class="fas fa-chevron-down"></i>
+  </option>
+           <option value="All">All</option> 
+           <option value="saab">Saab</option> 
+           <option value="opel">Opel</option> 
+           <option value="audi">Audi</option>
+            <option value="volvo">Volvo</option> 
+            <option value="saab">Saab</option> 
+            <option value="opel">Opel</option> 
+            <option value="audi">Audi</option> 
+            <option value="volvo">Volvo</option> 
+            <option value="saab">Saab</option> 
+           <option value="opel">Opel</option> 
+           <option value="audi">Audi</option> 
+           </select><br><br>
+         <div>
+    <select name="Year">
+  <option value=""></option>
+    <option value="" selected disabled>
+    Year
+    <i class="fas fa-chevron-down"></i>
+  </option>
+    <option value="2022">2022</option>
+  <option value="2021">2021</option>
+  <option value="2020">2020</option>
+  <option value="2019">2019</option>
+  <option value="2018">2018</option>
+  <option value="2017">2017</option>
+  <option value="2016">2016</option>
+  <option value="2015">2015</option>
+  <option value="2014">2014</option>
+  <option value="2013">2013</option>
+  <option value="2012">2012</option>
+  <option value="2011">2011</option>
+  <option value="2010">2010</option>
+  <option value="2009">2009</option>
+  <option value="2008">2008</option>
+  <option value="2007">2007</option>
+  <option value="2006">2006</option>
+  <option value="2005">2005</option>
+  <option value="2004">2004</option>
+  <option value="2003">2003</option>
+   <option value="2002">2002</option>
+  <option value="2001">2001</option>
+  <option value="2000">2000</option>
+  <option value="1999">1999</option>
+</select>
+</div>
+<br>
+<div>
+<select name="Transmission">
+  <option value="" selected disabled>
+    Transmission<i class="fas fa-chevron-down"></i>
+  </option>
+  <option value="All">All</option>
+  <option value="Manual">Manual</option>
+  <option value="Automatic">Automatic</option>
+</select>
+</div><br>
+<div>
+    <select name="Body Type">
+  <option value="" selected disabled>
+    Body Type<i class="fas fa-chevron-down"></i>
+  </option>
+  <option value="Wagon">Wagon</option>
+  <option value="Sedan">Sedan</option>
+  <option value="Hatchback">Hatchback</option>
+  <option value="SUV">SUV</option>
+<option value="Truck">Truck</option>
+  <option value="Pickup">Pick up</option>
+</select>
+</div>
+<div>
+<label for="Price">Price(max)</label>
+<input type="range" id="volume" name="volume" min="0" max="500000" value="500000000">
+</div>
+<br>
+<button type="reset">Reset filters</button>
+</form>
+ </section>
+ </div>
+</div>
+
+
+
+<div id="newBody">
+<div id="grid-container">
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+         Chevalier 2022
+         <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+         Chevalier 2022
+        <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+</section>
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+          Chevalier 2022
+        <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+</section>
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+         Chevalier 2022
+        <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+</section>
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+         Chevalier 2022
+        <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+</section>
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+         Chevalier 2022
+        <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+</section>
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+         Chevalier 2022
+        <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+</section>
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+         Chevalier 2022
+        <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+</section>
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+         Chevalier 2022
+        <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+</section>
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+         Chevalier 2022<
+        <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+</section>
+<section>
+   <figure class="img-box ">
+     <img src="https://www.carpadi.com/cars/car-5.png" alt=" cars and details" loading="lazy">
+         Chevalier 2022
+        <h3>#10500000</h3>
+         <h4></h4>
+     <button>view</button>
+     </figure>
+</section>
+</div>
+</div>
+
+ <footer>
+        <section>
+          <img src="https://www.carpadi.com/icons/icon-circle.png" id="foot-logo" alt="logo">
+        </section>
+         <section id="con-sec">
+           <h3>CONTACT</h3>
+           <figure id="foot-soc">
+         <img src="https://www.freeiconspng.com/uploads/facebook-logo-png-2-0.png"  alt="Facebook logo" />
+      <img src="https://www.freeiconspng.com/uploads/twitter-icon-9.png" width="40px" alt="Twitter" />
+     
+            <img src="https://www.freeiconspng.com/uploads/linkedin-logo-3.png"  alt="Linkedin Logo" />
+            <img src="https://www.freeiconspng.com/uploads/instagram-logo-3.png" alt="instagram logo" />
+            </figure>
+        </section>
+        <hr>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h2>Shop</h2>
+      <a href="#" target="_blank">Sell</a>
+      <a href="#" target="_blank">Buy</a>
+      <a href="#" target="_blank">Become a Merchant</a>
+    </div>
+    <div class="footer-section">
+      <h2>Company</h2>
+      <a href="#" target="_blank">About us</a>
+    </div>
+    <div class="footer-section">
+      <h2>Help</h2>
+      <a href="#" target="_blank">FAQ</a>
+      
+      <a href="#" target="_blank">Privacy policy</a>
+      <a href="#" target="_blank">Terms &amp; conditions</a>
+    </div>
+    <div class="footer-section">
+      <h2>Contact us</h2>
+      <a href="tel:+2348129014778">+2348129014778</a>
+     
+      <a href="mailto:admin@carpadi.com">admin@carpadi.com</a>
+      
+      <address>
+          KM 32 Lekki-Epe express way, Ikota.
+      </address>
+    </div>
+  </div>
+  <hr>
+  <div class="footer-credits">
+    <p>&copy; 2023 Carpadi. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
+
+  

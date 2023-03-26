@@ -1,0 +1,212 @@
+#banner {
+box-sizing: border-box;
+    background-color: #20699E;
+  height: 400px;  
+  color: white;
+}
+
+#logo-header {
+  margin-right: 80px;
+  width: 30px;
+  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 50px;
+  color: #ffff;
+ 
+}
+
+
+#form1 {
+    border-style: outset ;
+    box-sizing: border-box;
+border: 5px solid white;
+width: 30%;
+position: absolute;
+right: 30px;
+border-radius: 15px;
+height: 200px;
+}
+
+/* For screens smaller than 600px (e.g. mobile) */
+@media only screen and (max-width: 600px) {
+
+  /* Update progress bar */
+  .progress-bar {
+    flex-wrap: wrap;
+  }
+
+  .progress {
+    margin-right: 0;
+    margin-bottom: 10px;
+    flex-grow: unset;
+    width: 30%;
+  }
+
+  .progress-step {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Update input container */
+  .input-container {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  /* Update input and button styles */
+  input {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  button {
+    font-size: 16px;
+    width: 30%;
+  }
+
+}
+
+/* For screens larger than 600px */
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.progress {
+  height: 10px;
+  background-color: #ccc;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.progress-step {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.progress-step.active {
+  background-color: #007bff;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 80%;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+proceed1, proceed2 {
+    margin-left: 60px;
+}
+
+
+
+
+
+
+		h2 {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+
+		
+#img-hero {
+    margin-bottom: 0;
+    margin-top: 300px;
+    margin-left: 40px;
+    width: 600px;
+}
+
+
+footer img {
+    width: 50px;
+}
+footer {
+  background-color: #444444;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  margin-right: 50px;
+}
+
+.footer-section h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-credits {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-credits p {
+  margin: 0;
+}
+#con-sec {
+    position: absolute;
+    right: 0;
+    bottom: -1200px;
+}
